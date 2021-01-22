@@ -1,0 +1,16 @@
+PODS:
+  - DetalhesMoedas (0.1.0)
+
+DEPENDENCIES:
+  - DetalhesMoedas (from `../`)
+
+EXTERNAL SOURCES:
+  DetalhesMoedas:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DetalhesMoedas: 5c3f089b4fdc63dd66fe3a6f0d23588fc5cff139
+
+PODFILE CHECKSUM: ca18a2c21fd5384f96a9ae5cfa50fdf1320ce237
+
+COCOAPODS: 1.10.1
