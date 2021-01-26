@@ -1,6 +1,0 @@
-framework module CommonsService {
-  umbrella header "CommonsService-umbrella.h"
-
-  export *
-  module * { export * }
-}

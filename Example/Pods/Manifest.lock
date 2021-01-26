@@ -1,28 +1,16 @@
 PODS:
-  - CommonsService (1.2.0)
-  - DetalhesMoedas (1.0.0):
-    - CommonsService
+  - DetalhesMoedas (0.1.0)
 
 DEPENDENCIES:
-  - CommonsService (from `https://github.com/leticiassiqueira25/Commons.git`, branch `master`)
   - DetalhesMoedas (from `../`)
 
 EXTERNAL SOURCES:
-  CommonsService:
-    :branch: master
-    :git: https://github.com/leticiassiqueira25/Commons.git
   DetalhesMoedas:
     :path: "../"
 
-CHECKOUT OPTIONS:
-  CommonsService:
-    :commit: b4486a79f064e762087c1fab72b00213c1ea4a95
-    :git: https://github.com/leticiassiqueira25/Commons.git
-
 SPEC CHECKSUMS:
-  CommonsService: 87db8c694dbfdc58162415fd7d320fe9f0c79fee
-  DetalhesMoedas: 7cc7821edf0821886a0dfd152b6f4ef04bf9c1b9
+  DetalhesMoedas: 5c3f089b4fdc63dd66fe3a6f0d23588fc5cff139
 
-PODFILE CHECKSUM: c151b22ba824d0e437f76d31d08c210622dae4b0
+PODFILE CHECKSUM: ca18a2c21fd5384f96a9ae5cfa50fdf1320ce237
 
 COCOAPODS: 1.10.1
