@@ -4,9 +4,6 @@ platform :ios, '9.0'
 
 target 'DetalhesMoedas_Example' do
   pod 'DetalhesMoedas', :path => '../'
-  pod 'CommonsService',
-  :git => 'https://github.com/leticiassiqueira25/Commons.git',
-  :branch => ‘master'
 
   target 'DetalhesMoedas_Tests' do
     inherit! :search_paths

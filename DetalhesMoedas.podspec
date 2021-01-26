@@ -32,8 +32,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'DetalhesMoedas/Classes/**/*'
   
-  s.dependency 'CommonsService'
-  
   # s.resource_bundles = {
   #   'DetalhesMoedas' => ['DetalhesMoedas/Assets/*.png']
   # }
