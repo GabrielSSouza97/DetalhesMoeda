@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewControllerFav = FavoritosViewController()
         let viewControllerDet = DetalhesViewController()
         //UITabBar será a rootViewController + 2 navigation controller
-        let navigationController = UINavigationController(rootViewController: viewControllerFav)
+        let navigationController = UINavigationController(rootViewController: viewControllerDet)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         
