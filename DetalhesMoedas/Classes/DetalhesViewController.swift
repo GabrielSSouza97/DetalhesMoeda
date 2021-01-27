@@ -44,6 +44,12 @@ public class DetalhesViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+//   public func carregaDetalhes(_ moeda:Moeda) {
+//    siglaMoeda.text = moeda.siglaMoeda
+//       valorPrincipal.text = String(moeda.priceUSD)
+//       valorUltimaHora.text = String(moeda.volumeHora)
+//
+//   }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
