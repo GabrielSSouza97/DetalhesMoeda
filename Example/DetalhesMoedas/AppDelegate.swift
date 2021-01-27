@@ -5,20 +5,18 @@
 //  Created by letyciamarques on 01/22/2021.
 //  Copyright (c) 2021 letyciamarques. All rights reserved.
 //
-
 import UIKit
 import DetalhesMoedas
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        let viewController = FavoritosViewController()
+        let viewControllerFav = FavoritosViewController()
+        let viewControllerDet = DetalhesViewController()
         //UITabBar será a rootViewController + 2 navigation controller
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let navigationController = UINavigationController(rootViewController: viewControllerFav)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         
