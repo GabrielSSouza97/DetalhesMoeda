@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0AC1F07E2AD4ECB72C896B3CDAA91AD6 /* Pods-DetalhesMoedas_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C96935AD3F1CDEEBE68B725B94177F44 /* Pods-DetalhesMoedas_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BEB70C725C1F86F00CB0C0D /* FavoritosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB70C625C1F86F00CB0C0D /* FavoritosCollectionViewCell.swift */; };
+		1BEB70CD25C1F87C00CB0C0D /* FavoritosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEB70CC25C1F87C00CB0C0D /* FavoritosCollectionViewCell.xib */; };
+		1BEB70D325C1F88600CB0C0D /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEB70D225C1F88500CB0C0D /* Perfil.swift */; };
 		2AB773C7D6C103303E8DADD067826D3D /* Moeda.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D27C25D8E2A67EA332891A6E2CFBFE /* Moeda.swift */; };
 		429F2D039D0E81831059367548DDF581 /* Pods-DetalhesMoedas_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 147582B247F209B3C64DBF47E6DEF47F /* Pods-DetalhesMoedas_Example-dummy.m */; };
 		4F5F1ED558C3F2A6A93D72F995570195 /* CommonsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD22C9F7F0C954797C7B37BD068FAE37 /* CommonsService.framework */; };
@@ -66,21 +69,24 @@
 		147582B247F209B3C64DBF47E6DEF47F /* Pods-DetalhesMoedas_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DetalhesMoedas_Example-dummy.m"; sourceTree = "<group>"; };
 		16F70A107FC3FCFDCAA32EC0322BCAE1 /* FavoritosViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FavoritosViewController.xib; path = DetalhesMoedas/Classes/FavoritosViewController.xib; sourceTree = "<group>"; };
 		193C529DEEEAFBFDD9D9FC2A0BA968D8 /* DetalhesMoedas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DetalhesMoedas.debug.xcconfig; sourceTree = "<group>"; };
+		1BEB70C625C1F86F00CB0C0D /* FavoritosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritosCollectionViewCell.swift; path = DetalhesMoedas/Classes/FavoritosCollectionViewCell.swift; sourceTree = "<group>"; };
+		1BEB70CC25C1F87C00CB0C0D /* FavoritosCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritosCollectionViewCell.xib; path = DetalhesMoedas/Classes/FavoritosCollectionViewCell.xib; sourceTree = "<group>"; };
+		1BEB70D225C1F88500CB0C0D /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Perfil.swift; path = DetalhesMoedas/Classes/Perfil.swift; sourceTree = "<group>"; };
 		1D65AD72B1CA0F492B500D8B77B4AC90 /* Pods-DetalhesMoedas_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DetalhesMoedas_Tests.modulemap"; sourceTree = "<group>"; };
 		1FCA6CB494869A2E1ABE998426EFC53E /* DetalhesMoedas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DetalhesMoedas-dummy.m"; sourceTree = "<group>"; };
-		27B431C658BB3790614E68BB176703AB /* Pods_DetalhesMoedas_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DetalhesMoedas_Tests.framework; path = "Pods-DetalhesMoedas_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B4DAFDA2B601E11A3DD5042CAD5AFCD /* DetalhesMoedas.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DetalhesMoedas.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		27B431C658BB3790614E68BB176703AB /* Pods_DetalhesMoedas_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetalhesMoedas_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4DAFDA2B601E11A3DD5042CAD5AFCD /* DetalhesMoedas.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DetalhesMoedas.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2BBE519C685AB9E10FFFD3B775A344F7 /* CommonsService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CommonsService.modulemap; sourceTree = "<group>"; };
 		2C2A66C8650386ABA966E204ACE908A4 /* Pods-DetalhesMoedas_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DetalhesMoedas_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		42688C34C81DCFA2CE03C870D68E0722 /* FavoritosViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FavoritosViewController.swift; path = DetalhesMoedas/Classes/FavoritosViewController.swift; sourceTree = "<group>"; };
 		465D2C633AB60B45B32C2A9D3CA47F96 /* Pods-DetalhesMoedas_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DetalhesMoedas_Example-Info.plist"; sourceTree = "<group>"; };
 		47515AB2C0D025D6CF7603323769198A /* CommonsService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonsService.release.xcconfig; sourceTree = "<group>"; };
-		500026CAE56DA4F1C25F5E712BFD1885 /* DetalhesMoedas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DetalhesMoedas.framework; path = DetalhesMoedas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500026CAE56DA4F1C25F5E712BFD1885 /* DetalhesMoedas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DetalhesMoedas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A50465BC51E40D56ACD52EB4CE83EEA /* Pods-DetalhesMoedas_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DetalhesMoedas_Tests-dummy.m"; sourceTree = "<group>"; };
 		67CC748CDC31620099FC3F02A9B486BA /* DetalhesMoedas.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DetalhesMoedas.modulemap; sourceTree = "<group>"; };
 		6BD5FA7198F7345BF1015C37D62E3F5A /* Pods-DetalhesMoedas_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DetalhesMoedas_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		772976041ECFC6F15A3AEADAA0A34166 /* FormataNumero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormataNumero.swift; path = CommonsService/Classes/FormataNumero.swift; sourceTree = "<group>"; };
-		78C90534B0DF0D228306E04ECB79C09D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		78C90534B0DF0D228306E04ECB79C09D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7B4C5742E547CD525BBD5E17A12F0750 /* CommonsService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonsService.debug.xcconfig; sourceTree = "<group>"; };
 		8229B752532D1E743DCCF19FE2ED4290 /* Pods-DetalhesMoedas_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DetalhesMoedas_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8306C11BE1666CDFBEDE3C806DA990C7 /* Pods-DetalhesMoedas_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DetalhesMoedas_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -91,12 +97,12 @@
 		8786E9C4F03887E6D33600B20366B648 /* CommonsService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CommonsService-dummy.m"; sourceTree = "<group>"; };
 		8953449478BB77818AAB1EE057725695 /* DetalhesMoedas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DetalhesMoedas.release.xcconfig; sourceTree = "<group>"; };
 		8B80E320F0A97EACF52AB196F1008775 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B9647DA48CD2D8BBCF08BDEF1A38BD /* Pods-DetalhesMoedas_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DetalhesMoedas_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AD22C9F7F0C954797C7B37BD068FAE37 /* CommonsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3596B6FEF519B5B3E8E3274B6A2C555 /* Pods-DetalhesMoedas_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DetalhesMoedas_Example.modulemap"; sourceTree = "<group>"; };
-		B4F3A82FD253C21705A6DF26C08FEC66 /* CommonsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CommonsService.framework; path = CommonsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1D13914E4B46BEEF5AF219F0BB639AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B4F3A82FD253C21705A6DF26C08FEC66 /* CommonsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D13914E4B46BEEF5AF219F0BB639AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C5D9F3BC325E11F3B4048723AC3B995D /* DetalhesMoedas-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DetalhesMoedas-prefix.pch"; sourceTree = "<group>"; };
 		C96935AD3F1CDEEBE68B725B94177F44 /* Pods-DetalhesMoedas_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DetalhesMoedas_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CB62F9D81D2DF5E5DE1D22358DE60981 /* Pods-DetalhesMoedas_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DetalhesMoedas_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -104,7 +110,7 @@
 		D2D27C25D8E2A67EA332891A6E2CFBFE /* Moeda.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moeda.swift; path = CommonsService/Classes/Moeda.swift; sourceTree = "<group>"; };
 		D2F1EE04B1779BDFF0CE31CA47A14883 /* Pods-DetalhesMoedas_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DetalhesMoedas_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D539A22BF844B724E44A8ED760B26748 /* Pods-DetalhesMoedas_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DetalhesMoedas_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDD7D2B509EF29D007D31F3F047E867D /* Pods_DetalhesMoedas_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DetalhesMoedas_Example.framework; path = "Pods-DetalhesMoedas_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD7D2B509EF29D007D31F3F047E867D /* Pods_DetalhesMoedas_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DetalhesMoedas_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E711E75E0149D1C63BBF5D266A30BECD /* CommonsService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonsService-umbrella.h"; sourceTree = "<group>"; };
 		ED949288757E8C8CF837CD8FDB3631D3 /* CommonsService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CommonsService-Info.plist"; sourceTree = "<group>"; };
 		EF3DD9F34A3CE912E3BDA10C3899A89E /* Pods-DetalhesMoedas_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DetalhesMoedas_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -211,7 +217,6 @@
 				D2D27C25D8E2A67EA332891A6E2CFBFE /* Moeda.swift */,
 				17F6017B3C596DBE92F6FC1B3FCB1604 /* Support Files */,
 			);
-			name = CommonsService;
 			path = CommonsService;
 			sourceTree = "<group>";
 		};
@@ -247,6 +252,9 @@
 				CD8CC0F4AD05BA8326AD03685302EBB6 /* DetalhesViewController.xib */,
 				42688C34C81DCFA2CE03C870D68E0722 /* FavoritosViewController.swift */,
 				16F70A107FC3FCFDCAA32EC0322BCAE1 /* FavoritosViewController.xib */,
+				1BEB70C625C1F86F00CB0C0D /* FavoritosCollectionViewCell.swift */,
+				1BEB70CC25C1F87C00CB0C0D /* FavoritosCollectionViewCell.xib */,
+				1BEB70D225C1F88500CB0C0D /* Perfil.swift */,
 				84D8AAED53352B98FC6D051F26B6071D /* ReplaceMe.swift */,
 				3C1E155165949D6E4DEB895131F26B0B /* Pod */,
 				1D5633C1EB155599420804E52C11F3CE /* Support Files */,
@@ -475,6 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BEB70CD25C1F87C00CB0C0D /* FavoritosCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +528,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B19AC6B00EB5465EE0FB1C63766921 /* DetalhesMoedas-dummy.m in Sources */,
+				1BEB70D325C1F88600CB0C0D /* Perfil.swift in Sources */,
 				C21B8CB275C50AF889C9FA13343980DE /* DetalhesViewController.swift in Sources */,
+				1BEB70C725C1F86F00CB0C0D /* FavoritosCollectionViewCell.swift in Sources */,
 				DFC27EEA11FA5EFFBA6430548FA71DD3 /* DetalhesViewController.xib in Sources */,
 				B608D0624208648C83F1C4CB2B5EFA6D /* FavoritosViewController.swift in Sources */,
 				A1D171CB3B8B3D4C155FD631D570243F /* FavoritosViewController.xib in Sources */,
@@ -865,8 +876,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

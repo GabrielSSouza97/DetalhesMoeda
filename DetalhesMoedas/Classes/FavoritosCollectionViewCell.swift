@@ -15,6 +15,7 @@ class FavoritosCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        //print(Perfil.shared.nome)
         // Initialization code
     }
 

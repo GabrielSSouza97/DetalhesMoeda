@@ -52,7 +52,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PCM-Vd-7rz">
-                    <rect key="frame" x="10" y="89" width="355" height="578"/>
+                    <rect key="frame" x="20" y="89" width="335" height="578"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KmP-Zb-nIB">
@@ -66,12 +66,12 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PCM-Vd-7rz" secondAttribute="trailing" constant="10" id="0lJ-7M-sgh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PCM-Vd-7rz" secondAttribute="trailing" constant="20" id="0lJ-7M-sgh"/>
                 <constraint firstItem="cpy-hZ-MED" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="63H-fY-JEq"/>
                 <constraint firstItem="R6P-ys-bNX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Esf-wU-qLr"/>
                 <constraint firstItem="PCM-Vd-7rz" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="IMP-QX-eqf"/>
                 <constraint firstItem="R6P-ys-bNX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UvG-dq-69b"/>
-                <constraint firstItem="PCM-Vd-7rz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="X3n-8k-G9m"/>
+                <constraint firstItem="PCM-Vd-7rz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="X3n-8k-G9m"/>
                 <constraint firstItem="PCM-Vd-7rz" firstAttribute="top" secondItem="cpy-hZ-MED" secondAttribute="bottom" id="f11-BX-Woc"/>
                 <constraint firstItem="cpy-hZ-MED" firstAttribute="top" secondItem="R6P-ys-bNX" secondAttribute="bottom" constant="8" symbolic="YES" id="loK-4B-Ipb"/>
                 <constraint firstItem="R6P-ys-bNX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mYc-ZT-77Y"/>
