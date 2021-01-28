@@ -7,6 +7,7 @@
 
 import UIKit
 import CommonsService
+
 public class DetalhesViewController: UIViewController {
     
     
@@ -31,17 +32,19 @@ public class DetalhesViewController: UIViewController {
     @IBOutlet weak var labelBotao: UILabel!
     
     
+    @IBOutlet weak var imagemFavorito: UIImageView!
+    
     // MARK : @IBAction
     
     @IBAction func voltar(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil) }
     
-    @IBOutlet weak var imagemFavorito: UIImageView!
     
     @IBAction func removeAdiciona(_ sender: UIButton) {
         labelBotao.text = "ADICIONAR"
     }
     
+    //var favoritos : Moeda
     
     public init(_ formata: FormataNumero = FormataNumero()) {
         self.formataNumero = formata
@@ -65,7 +68,6 @@ public class DetalhesViewController: UIViewController {
         let moedaEstatico: Moeda = Moeda(siglaMoeda: "BTC" , name: "BitCoin", priceUSD: 130000.21, volumeHora: 300000.21, volumeDia: 220000.21, volumeMes: 136800.21, idIcon: "4caf2b16-a017-4e26-a348-2cea69c34cba")
         
         carregaDetalhes(moedaEstatico)
-        
         
         let url = moedaEstatico.idIcon!
         let newUrl = url.replacingOccurrences(of: "-", with: "")

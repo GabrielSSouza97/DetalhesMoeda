@@ -7,11 +7,9 @@ target 'DetalhesMoedas_Example' do
   pod 'CommonsService',
   :git => 'https://github.com/leticiassiqueira25/Commons.git',
   :branch => 'master'
-  
 
   target 'DetalhesMoedas_Tests' do
     inherit! :search_paths
 
-    
   end
 end
