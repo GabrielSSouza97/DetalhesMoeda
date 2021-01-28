@@ -48,7 +48,7 @@ extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDat
         return 8
     }
     
-    
+    // Commitando
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celula = collectionView.dequeueReusableCell(withReuseIdentifier: celulaFavorito, for: indexPath) as! FavoritosCollectionViewCell
