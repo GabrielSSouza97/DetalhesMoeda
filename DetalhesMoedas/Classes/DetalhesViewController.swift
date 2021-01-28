@@ -9,6 +9,11 @@ import UIKit
 import CommonsService
 public class DetalhesViewController: UIViewController {
     
+    
+    //MARK: Variáveis
+    let formataNumero: FormataNumero
+    
+    
     //MARK: @IBOutlet
     
     @IBOutlet weak var siglaMoeda: UILabel!
@@ -17,26 +22,29 @@ public class DetalhesViewController: UIViewController {
     
     @IBOutlet weak var valorPrincipal: UILabel!
     
-    
-    @IBOutlet weak var removerAdicionar: UILabel!
-    
-    
     @IBOutlet weak var valorUltimaHora: UILabel!
     
     @IBOutlet weak var valorUltimoDia: UILabel!
     
-    
     @IBOutlet weak var valorUltimoMes: UILabel!
+    
+    @IBOutlet weak var labelBotao: UILabel!
+    
     
     // MARK : @IBAction
     
     @IBAction func voltar(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil) }
+    
+    @IBOutlet weak var imagemFavorito: UIImageView!
+    
+    @IBAction func removeAdiciona(_ sender: UIButton) {
+        labelBotao.text = "ADICIONAR"
     }
     
     
-    
-    public init() {
+    public init(_ formata: FormataNumero = FormataNumero()) {
+        self.formataNumero = formata
         super.init(nibName: "DetalhesViewController", bundle: Bundle(for: DetalhesViewController.self))
     }
     
@@ -44,21 +52,29 @@ public class DetalhesViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-//   public func carregaDetalhes(_ moeda:Moeda) {
-//    siglaMoeda.text = moeda.siglaMoeda
-//       valorPrincipal.text = String(moeda.priceUSD)
-//       valorUltimaHora.text = String(moeda.volumeHora)
-//
-//   }
+   public func carregaDetalhes(_ moeda:Moeda) {
+        siglaMoeda.text = moeda.siglaMoeda
+        valorPrincipal.text = self.formataNumero.formatarCotacao(cotacao: moeda.priceUSD!)
+        valorUltimaHora.text = self.formataNumero.formatarCotacao(cotacao: moeda.volumeHora!)
+        valorUltimoDia.text = self.formataNumero.formatarCotacao(cotacao: moeda.volumeDia!)
+        valorUltimoMes.text = self.formataNumero.formatarCotacao(cotacao: moeda.volumeMes!)
+   }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        siglaMoeda.text = "SIGLA MOEDA"
-        valorPrincipal.text = "$35.0000.22"
-        valorUltimoDia.text = "$123.456.78"
-        valorUltimoMes.text = "$123.456.78"
-        valorUltimaHora.text = "$123.456.78"
+        let moedaEstatico: Moeda = Moeda(siglaMoeda: "BTC" , name: "BitCoin", priceUSD: 130000.21, volumeHora: 300000.21, volumeDia: 220000.21, volumeMes: 136800.21, idIcon: "4caf2b16-a017-4e26-a348-2cea69c34cba")
+        
+        carregaDetalhes(moedaEstatico)
+        
+        
+        let url = moedaEstatico.idIcon!
+        let newUrl = url.replacingOccurrences(of: "-", with: "")
+        guard let imageUrl = URL(string: "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newUrl).png") else { return }
+//
+//        cell.imagemMoeda.af_setImage(withURL: imageUrl)
+    
       // imagemMoeda.image = image
+
         
     }
 }

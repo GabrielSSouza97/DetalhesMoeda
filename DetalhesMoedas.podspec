@@ -25,17 +25,18 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'letyciamarques' => 'letycia.sobrinho@hotmail.com' }
-  s.source           = { :git => 'https://github.com/letyciamarques/DetalhesMoedas.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/letyciamarques/DetalhesMoeda.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+ 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'DetalhesMoedas/Classes/**/*'
   
   s.dependency 'CommonsService'
   
+  
   # s.resource_bundles = {
-  #   'DetalhesMoedas' => ['DetalhesMoedas/Assets/*.png']
+  #   'DetalhesMoedas' => ['DetalhesMoedas/Assets/*.png'] 4
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
