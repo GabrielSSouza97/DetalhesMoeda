@@ -33,7 +33,10 @@ public class DetalhesViewController: UIViewController {
     
     @IBAction func removeAdiciona(_ sender: UIButton) {
         if moedaDetalhe.isFavorite == false {
+            print(moedaDetalhe.idIcon)
+            print(listaFavorito)
             listaFavorito.append(moedaDetalhe.idIcon)
+            print(listaFavorito)
         } else {
             
         }
