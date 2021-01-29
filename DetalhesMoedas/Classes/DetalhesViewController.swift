@@ -14,6 +14,7 @@ public class DetalhesViewController: UIViewController {
     //MARK: Variáveis
     let formataNumero: FormataNumero
     var moedaDetalhe: Moeda
+    var listaFavorito: Array<Any>
     
     //MARK: @IBOutlet
     
@@ -31,7 +32,11 @@ public class DetalhesViewController: UIViewController {
     // MARK : @IBAction
     
     @IBAction func removeAdiciona(_ sender: UIButton) {
-        
+//        if moedaDetalhe.isFavorite == false {
+//            listaFavorito.append(moedaDetalhe.idIcon)
+//        } else {
+//
+//        }
     }
     
     public init(moedaDetalhe: Moeda, formataNumero: FormataNumero = FormataNumero()) {
@@ -48,6 +53,7 @@ public class DetalhesViewController: UIViewController {
             super.viewDidLoad()
             configuraValores()
             self.navigationController?.setNavigationBarHidden(false, animated: false)
+            print(moedaDetalhe)
     }
     
     public func configuraValores() {
