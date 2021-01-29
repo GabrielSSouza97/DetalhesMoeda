@@ -15,11 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let viewControllerFav = FavoritosViewController()
-        let viewControllerDet = DetalhesViewController()
+        //let viewControllerDet = DetalhesViewController()
         
         //UITabBar será a rootViewController + 2 navigation controller
         
-        let navigationController = UINavigationController(rootViewController: viewControllerDet)
+        let navigationController = UINavigationController(rootViewController: viewControllerFav)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         

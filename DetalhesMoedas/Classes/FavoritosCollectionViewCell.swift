@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CommonsService
 
 class FavoritosCollectionViewCell: UICollectionViewCell {
     

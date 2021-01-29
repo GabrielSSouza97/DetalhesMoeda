@@ -10,11 +10,19 @@ import CommonsService
 
 public class FavoritosViewController: UIViewController {
     
-    //@IBOutlet weak var siglaMoeda: UILabel!
-    @IBOutlet weak var collectionViewFavoritos: UICollectionView!
-    let celulaFavorito = "celulaFavorito"
+    // MARK: - @IBOutlets
     
-    public init() {
+    @IBOutlet weak var collectionViewFavoritos: UICollectionView!
+    
+    // MARK: - Variaveis
+    
+    let celulaFavorito = "celulaFavorito"
+    let formataNumero: FormataNumero
+    var moedaDetalhe: Moeda
+    
+    public init(moedaDetalhe: Moeda, formataNumero: FormataNumero = FormataNumero()) {
+        self.moedaDetalhe = moedaDetalhe
+        self.formataNumero = formataNumero
         super.init(nibName: "FavoritosViewController", bundle: Bundle(for: FavoritosViewController.self))
     }
     
@@ -26,9 +34,7 @@ public class FavoritosViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         collectionViewFavoritos.reloadData()
-        //Perfil.shared
-        //print(Perfil.shared.nome)
-        //erfil.shared.nome = "Marcio"
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     func setupCollectionView() {
@@ -55,11 +61,12 @@ extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDat
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celula = collectionView.dequeueReusableCell(withReuseIdentifier: celulaFavorito, for: indexPath) as! FavoritosCollectionViewCell
         
+//        celula.labelNomeMoeda.text = moedaDetalhe.name
+//        celula.labelSiglaMoeda.text = moedaDetalhe.siglaMoeda
+//        celula.labelValorMoeda.text = formataNumero.formatarCotacao(cotacao: (moedaDetalhe.priceUSD ?? 0))
+        
         celula.layer.cornerRadius = 7
         celula.layer.borderWidth = 0.5
-        celula.labelNomeMoeda.text = "Nome da Moeda"
-        celula.labelSiglaMoeda.text = "SGL"
-        celula.labelValorMoeda.text = "R$"
 
         return celula
     }

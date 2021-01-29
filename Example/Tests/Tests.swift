@@ -1,5 +1,5 @@
 import XCTest
-import DetalhesMoedas
+//import DetalhesMoedas
 
 class Tests: XCTestCase {
     

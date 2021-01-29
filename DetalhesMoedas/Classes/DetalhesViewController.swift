@@ -33,10 +33,10 @@ public class DetalhesViewController: UIViewController {
     }
     
     public init(moedaDetalhe: Moeda, formataNumero: FormataNumero = FormataNumero()) {
-                self.moedaDetalhe = moedaDetalhe
-                self.formataNumero = formataNumero
-                super.init(nibName: "DetalhesViewController", bundle: Bundle(for: DetalhesViewController.self))
-            }
+        self.moedaDetalhe = moedaDetalhe
+        self.formataNumero = formataNumero
+        super.init(nibName: "DetalhesViewController", bundle: Bundle(for: DetalhesViewController.self))
+    }
     
     public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
