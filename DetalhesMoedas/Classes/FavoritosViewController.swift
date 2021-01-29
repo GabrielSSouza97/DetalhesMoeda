@@ -13,6 +13,7 @@ public class FavoritosViewController: UIViewController {
     //@IBOutlet weak var siglaMoeda: UILabel!
     @IBOutlet weak var collectionViewFavoritos: UICollectionView!
     let celulaFavorito = "celulaFavorito"
+    
     var moedaFavorito: Array<Moeda> = []
     
     public init(moedaFavorito: Array<Moeda> = []) {
