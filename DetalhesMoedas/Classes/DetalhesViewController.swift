@@ -39,7 +39,7 @@ public class DetalhesViewController: UIViewController {
         }
     }
     
-    public init(moedaDetalhe: Moeda, listaFavorito: Array<Any>, formataNumero: FormataNumero = FormataNumero()) {
+    public init(moedaDetalhe: Moeda, listaFavorito: Array<Any> = [], formataNumero: FormataNumero = FormataNumero()) {
                 self.moedaDetalhe = moedaDetalhe
                 self.listaFavorito = listaFavorito
                 self.formataNumero = formataNumero
