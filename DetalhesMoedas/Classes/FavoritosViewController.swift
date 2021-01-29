@@ -31,6 +31,7 @@ public class FavoritosViewController: UIViewController {
         //Perfil.shared
         //print(Perfil.shared.nome)
         //erfil.shared.nome = "Marcio"
+        print(moedaFavorito[0])
     }
     
     func setupCollectionView() {
