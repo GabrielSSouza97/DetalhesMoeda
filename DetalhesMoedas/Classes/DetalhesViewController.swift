@@ -14,7 +14,7 @@ public class DetalhesViewController: UIViewController {
     //MARK: Variáveis
     let formataNumero: FormataNumero
     var moedaDetalhe: Moeda
-    var listaFavorito: Array<Any>
+    //var listaFavorito: Array<Any>
     
     //MARK: @IBOutlet
     
