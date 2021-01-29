@@ -33,12 +33,14 @@ public class DetalhesViewController: UIViewController {
             guard moedaDetalhe.siglaMoeda != nil else { return }
             let sigla = moedaDetalhe.siglaMoeda
             
-            var favoritos = [Any]()
-            favoritos.append(sigla)
-            print(favoritos)
-            
+            //Chama UserDefaults
             let defaults = UserDefaults.standard
-            defaults.set(favoritos, forKey: "ArrayFavoritos")
+            //Recupera Array
+            var fav = defaults.array(forKey: "ArrayFavoritos")
+            fav?.append(sigla)
+            
+            print(fav)
+            defaults.set(fav, forKey: "ArrayFavoritos")
         } else {
             
         }

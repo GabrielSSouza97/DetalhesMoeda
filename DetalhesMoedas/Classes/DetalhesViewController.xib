@@ -56,7 +56,6 @@
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x72-8Q-fdF">
                             <rect key="frame" x="62.666666666666657" y="206" width="289" height="47"/>
-                            <color key="backgroundColor" red="0.44566511279999999" green="0.22431943479999999" blue="0.85671606030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="47" id="GKW-CG-TUD"/>
                                 <constraint firstAttribute="width" constant="289" id="cz1-xm-kOh"/>
