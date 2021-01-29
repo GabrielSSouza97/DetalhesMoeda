@@ -51,7 +51,7 @@
 		83DE2E9ADFF3F16B874F6953316188CB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497D26B99187D78969AF049252C5AFE /* ReplaceMe.swift */; };
 		879F02C85701A85EB69DF847EFC94277 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB437D8FB9DEC82C6D0E3857E0838547 /* AFIError.swift */; };
 		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1D2C5B1B498D237B5AD7B6AF6E7878 /* Notifications.swift */; };
-		8B37860F25C38BFB0084A8FB /* DetalhesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B37860E25C38BFA0084A8FB /* DetalhesViewController.xib */; };
+		8BE2A4B725C4736A00B3234F /* DetalhesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE2A4B625C4736A00B3234F /* DetalhesViewController.xib */; };
 		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3771C823C5B1B207D740530A91ED1752 /* ResponseSerialization.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7D2CDA513C1BA86FA45341E7528B2 /* HTTPHeaders.swift */; };
 		93A51FA6DA707CF7F5EDFF2675C3D0C1 /* CommonsService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED7DF956407B5C952154106D64F63CBA /* CommonsService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -202,8 +202,8 @@
 		83B9F53DE1AC0576BAE1FAAB1D0ED927 /* DetalhesMoedas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DetalhesMoedas.release.xcconfig; sourceTree = "<group>"; };
 		848C8E284488C8C9A945B25A6D03AB72 /* Pods-DetalhesMoedas_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DetalhesMoedas_Example-umbrella.h"; sourceTree = "<group>"; };
 		85845FE684DD2A8A9217AE8E991556CA /* Pods-DetalhesMoedas_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DetalhesMoedas_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8B37860E25C38BFA0084A8FB /* DetalhesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetalhesViewController.xib; path = DetalhesMoedas/Classes/DetalhesViewController.xib; sourceTree = "<group>"; };
 		8B61BF4FEF5C5B1EE0660F9088A1BA99 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
+		8BE2A4B625C4736A00B3234F /* DetalhesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetalhesViewController.xib; path = DetalhesMoedas/Classes/DetalhesViewController.xib; sourceTree = "<group>"; };
 		8EA558F16BB8D97F9131D8FCB5666FAF /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		8F1D2C5B1B498D237B5AD7B6AF6E7878 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		9014D07ACC5321FBE4D06A8F6047F603 /* Moeda.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Moeda.swift; path = CommonsService/Classes/Moeda.swift; sourceTree = "<group>"; };
@@ -456,7 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				0F4459DD8B382E46E7DB532D5127683C /* DetalhesViewController.swift */,
-				8B37860E25C38BFA0084A8FB /* DetalhesViewController.xib */,
+				8BE2A4B625C4736A00B3234F /* DetalhesViewController.xib */,
 				EDDCA3D6392C5579E8FB662A5C7F2423 /* FavoritosCollectionViewCell.swift */,
 				BD012D442B744B5869E3D7C95AF94048 /* FavoritosCollectionViewCell.xib */,
 				A15AE39517FFBFE10A06F785DA7380B7 /* FavoritosViewController.swift */,
@@ -808,7 +808,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B37860F25C38BFB0084A8FB /* DetalhesViewController.xib in Resources */,
+				8BE2A4B725C4736A00B3234F /* DetalhesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
