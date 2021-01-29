@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CommonsService:
-    :commit: f449848b9beeb20621a767e0d6fdf73d8a99959a
+    :commit: 73f8c7ad86a69c5dc6732f480b28af2c99e87f45
     :git: https://github.com/leticiassiqueira25/Commons.git
 
 SPEC CHECKSUMS:
