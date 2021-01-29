@@ -1,17 +1,16 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'DetalhesMoedas_Example' do
   pod 'DetalhesMoedas', :path => '../'
   pod 'CommonsService',
   :git => 'https://github.com/leticiassiqueira25/Commons.git',
   :branch => 'master'
-  
+  pod 'AlamofireImage', '~> 4.1.0'
 
   target 'DetalhesMoedas_Tests' do
     inherit! :search_paths
 
-    
   end
 end

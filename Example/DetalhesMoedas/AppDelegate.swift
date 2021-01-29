@@ -7,6 +7,7 @@
 //
 import UIKit
 import DetalhesMoedas
+import CommonsService
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
