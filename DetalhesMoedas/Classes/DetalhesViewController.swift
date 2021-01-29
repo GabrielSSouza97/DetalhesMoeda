@@ -26,10 +26,16 @@ public class DetalhesViewController: UIViewController {
     @IBOutlet weak var labelBotao: UILabel!
     @IBOutlet weak var imagemFavorito: UIImageView!
     
+    @IBOutlet weak var tituloBotao: UIButton!
+    
     // MARK : @IBAction
     
     @IBAction func removeAdiciona(_ sender: UIButton) {
-        labelBotao.text = "ADICIONAR"
+        if moedaDetalhe.isFavorite == false {
+            tituloBotao.setTitle("ADICIONAR", for: .normal)
+        } else {
+            tituloBotao.setTitle("REMOVER", for: .normal)
+        }
     }
     
     public init(moedaDetalhe: Moeda, formataNumero: FormataNumero = FormataNumero()) {

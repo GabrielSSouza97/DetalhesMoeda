@@ -9,11 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalhesViewController" customModule="ProjetoFinal" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalhesViewController" customModule="DetalhesMoedas" customModuleProvider="target">
             <connections>
                 <outlet property="imagemFavorito" destination="2NL-Ud-k6X" id="qpT-FT-FOL"/>
                 <outlet property="imagemMoeda" destination="1Me-sv-NyI" id="BTR-AK-lHB"/>
                 <outlet property="siglaMoeda" destination="5Q6-ag-gSj" id="7a2-xh-es3"/>
+                <outlet property="tituloBotao" destination="x72-8Q-fdF" id="NGE-Yv-Wrw"/>
                 <outlet property="valorPrincipal" destination="ble-2D-ZP6" id="0Qj-58-c2F"/>
                 <outlet property="valorUltimaHora" destination="lRJ-cu-Vak" id="ewl-QF-Rh7"/>
                 <outlet property="valorUltimoDia" destination="ryG-sA-4i7" id="i4n-ao-Ffq"/>
