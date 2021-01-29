@@ -26,9 +26,7 @@ public class DetalhesViewController: UIViewController {
     @IBOutlet weak var valorUltimoMes: UILabel!
     @IBOutlet weak var labelBotao: UILabel!
     @IBOutlet weak var imagemFavorito: UIImageView!
-    
-    @IBOutlet weak var tituloBotao: UIButton!
-    
+
     // MARK : @IBAction
     
     @IBAction func removeAdiciona(_ sender: UIButton) {
@@ -72,11 +70,11 @@ public class DetalhesViewController: UIViewController {
             guard let imageUrl = URL(string: "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newUrl).png") else { return }
             imagemMoeda.af_setImage(withURL: imageUrl)
         
-            if moedaDetalhe.isFavorite == false {
-                tituloBotao.setTitle("ADICIONAR", for: .normal)
-            } else {
-                tituloBotao.setTitle("REMOVER", for: .normal)
-            }
+//            if moedaDetalhe.isFavorite == false {
+//                tituloBotao.setTitle("ADICIONAR", for: .normal)
+//            } else {
+//                tituloBotao.setTitle("REMOVER", for: .normal)
+//            }
         }
     }
 
