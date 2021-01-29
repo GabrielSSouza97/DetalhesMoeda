@@ -35,9 +35,10 @@ public class DetalhesViewController: UIViewController {
             
             var favoritos = [Any]()
             favoritos.append(sigla)
+            print(favoritos)
             
             let defaults = UserDefaults.standard
-            defaults.setValue(favoritos, forKey: "ArrayFavoritos")
+            defaults.set(favoritos, forKey: "ArrayFavoritos")
         } else {
             
         }
