@@ -13,8 +13,10 @@ public class FavoritosViewController: UIViewController {
     //@IBOutlet weak var siglaMoeda: UILabel!
     @IBOutlet weak var collectionViewFavoritos: UICollectionView!
     let celulaFavorito = "celulaFavorito"
+    var moedaFavorito: Moeda
     
-    public init() {
+    public init(moedaFavorito: Moeda) {
+        self.moedaFavorito = moedaFavorito
         super.init(nibName: "FavoritosViewController", bundle: Bundle(for: FavoritosViewController.self))
     }
     
