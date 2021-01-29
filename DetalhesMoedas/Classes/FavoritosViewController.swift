@@ -42,7 +42,7 @@ public class FavoritosViewController: UIViewController {
 }
 
 extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+    // commit
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 8
