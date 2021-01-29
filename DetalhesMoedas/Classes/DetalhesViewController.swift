@@ -14,7 +14,6 @@ public class DetalhesViewController: UIViewController {
     //MARK: Variáveis
     let formataNumero: FormataNumero
     var moedaDetalhe: Moeda
-    var listaFavorito: Array<Any>
     
     //MARK: @IBOutlet
     
@@ -34,17 +33,18 @@ public class DetalhesViewController: UIViewController {
             guard moedaDetalhe.siglaMoeda != nil else { return }
             let sigla = moedaDetalhe.siglaMoeda
             
-            print(sigla)
-            listaFavorito.append(sigla)
-            print(listaFavorito)
+            var favoritos = [Any]()
+            favoritos.append(sigla)
+            
+            let defaults = UserDefaults.standard
+            defaults.setValue(favoritos, forKey: "ArrayFavoritos")
         } else {
             
         }
     }
     
-    public init(moedaDetalhe: Moeda, listaFavorito: Array<Any> = [], formataNumero: FormataNumero = FormataNumero()) {
+    public init(moedaDetalhe: Moeda, formataNumero: FormataNumero = FormataNumero()) {
                 self.moedaDetalhe = moedaDetalhe
-                self.listaFavorito = listaFavorito
                 self.formataNumero = formataNumero
                 super.init(nibName: "DetalhesViewController", bundle: Bundle(for: DetalhesViewController.self))
             }
@@ -57,7 +57,6 @@ public class DetalhesViewController: UIViewController {
             super.viewDidLoad()
             configuraValores()
             self.navigationController?.setNavigationBarHidden(false, animated: false)
-            print(listaFavorito)
     }
     
     public func configuraValores() {
