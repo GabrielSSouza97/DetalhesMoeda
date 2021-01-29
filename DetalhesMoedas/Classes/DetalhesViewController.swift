@@ -31,11 +31,7 @@ public class DetalhesViewController: UIViewController {
     // MARK : @IBAction
     
     @IBAction func removeAdiciona(_ sender: UIButton) {
-        if moedaDetalhe.isFavorite == false {
-            tituloBotao.setTitle("ADICIONAR", for: .normal)
-        } else {
-            tituloBotao.setTitle("REMOVER", for: .normal)
-        }
+        
     }
     
     public init(moedaDetalhe: Moeda, formataNumero: FormataNumero = FormataNumero()) {
@@ -52,7 +48,7 @@ public class DetalhesViewController: UIViewController {
             super.viewDidLoad()
             configuraValores()
             self.navigationController?.setNavigationBarHidden(false, animated: false)
-        }
+    }
     
     public func configuraValores() {
             siglaMoeda.text = moedaDetalhe.siglaMoeda
@@ -65,6 +61,12 @@ public class DetalhesViewController: UIViewController {
             let newUrl = url.replacingOccurrences(of: "-", with: "")
             guard let imageUrl = URL(string: "https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_32/\(newUrl).png") else { return }
             imagemMoeda.af_setImage(withURL: imageUrl)
+        
+            if moedaDetalhe.isFavorite == false {
+                tituloBotao.setTitle("ADICIONAR", for: .normal)
+            } else {
+                tituloBotao.setTitle("REMOVER", for: .normal)
+            }
         }
     }
 
