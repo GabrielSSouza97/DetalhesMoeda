@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="imagemFavorito" destination="2NL-Ud-k6X" id="qpT-FT-FOL"/>
                 <outlet property="imagemMoeda" destination="1Me-sv-NyI" id="BTR-AK-lHB"/>
+                <outlet property="labelBotao" destination="thp-On-6jM" id="ZO3-1x-0MG"/>
                 <outlet property="siglaMoeda" destination="5Q6-ag-gSj" id="7a2-xh-es3"/>
                 <outlet property="valorPrincipal" destination="ble-2D-ZP6" id="0Qj-58-c2F"/>
                 <outlet property="valorUltimaHora" destination="lRJ-cu-Vak" id="ewl-QF-Rh7"/>
@@ -55,12 +56,13 @@
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x72-8Q-fdF">
                             <rect key="frame" x="62.666666666666657" y="206" width="289" height="47"/>
+                            <color key="backgroundColor" red="0.44566511279999999" green="0.22431943479999999" blue="0.85671606030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="47" id="GKW-CG-TUD"/>
                                 <constraint firstAttribute="width" constant="289" id="cz1-xm-kOh"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
-                            <state key="normal" title="-">
+                            <state key="normal">
                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </state>
@@ -77,6 +79,15 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thp-On-6jM">
+                            <rect key="frame" x="63" y="206" width="289" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="47" id="cfA-N4-wEx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.55879306790000005" green="0.59525948760000003" blue="0.38427370789999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
@@ -85,10 +96,13 @@
                         <constraint firstItem="2NL-Ud-k6X" firstAttribute="top" secondItem="5Q6-ag-gSj" secondAttribute="top" id="7eQ-3k-Mw4"/>
                         <constraint firstItem="1Me-sv-NyI" firstAttribute="top" secondItem="gsm-Va-bkD" secondAttribute="top" constant="84" id="CnH-8p-qxO"/>
                         <constraint firstItem="1Me-sv-NyI" firstAttribute="centerX" secondItem="5Q6-ag-gSj" secondAttribute="centerX" id="O3Y-Of-ban"/>
+                        <constraint firstItem="thp-On-6jM" firstAttribute="top" secondItem="ble-2D-ZP6" secondAttribute="bottom" constant="22" id="Qed-GN-SRF"/>
+                        <constraint firstAttribute="trailing" secondItem="thp-On-6jM" secondAttribute="trailing" constant="62" id="dfr-ms-20v"/>
                         <constraint firstItem="ble-2D-ZP6" firstAttribute="centerX" secondItem="x72-8Q-fdF" secondAttribute="centerX" id="kHO-ud-Fop"/>
                         <constraint firstItem="1Me-sv-NyI" firstAttribute="top" secondItem="5Q6-ag-gSj" secondAttribute="bottom" constant="7.6699999999999999" id="lmK-Ij-GfF"/>
                         <constraint firstItem="1Me-sv-NyI" firstAttribute="centerX" secondItem="ble-2D-ZP6" secondAttribute="centerX" id="lsU-ec-VV1"/>
                         <constraint firstItem="1Me-sv-NyI" firstAttribute="centerX" secondItem="gsm-Va-bkD" secondAttribute="centerX" id="oph-S6-McQ"/>
+                        <constraint firstItem="thp-On-6jM" firstAttribute="leading" secondItem="gsm-Va-bkD" secondAttribute="leading" constant="63" id="wII-1j-RcI"/>
                         <constraint firstItem="2NL-Ud-k6X" firstAttribute="leading" secondItem="5Q6-ag-gSj" secondAttribute="trailing" constant="60" id="x5i-Vd-CfA"/>
                     </constraints>
                 </view>
