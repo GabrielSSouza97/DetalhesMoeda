@@ -36,13 +36,12 @@ public class DetalhesViewController: UIViewController {
             //Chama UserDefaults
             let defaults = UserDefaults.standard
             //Recupera Array
-            //var fav = defaults.array(forKey: "ArrayFavoritos")
-            var fav = defaults.object(forKey: "Favoritos")
+            var fav = defaults.array(forKey: "ArrayFavoritos")
             //Salva nova sigla no UserDefaults Array
-            fav = moedaDetalhe
+            fav?.append(sigla)
+            defaults.set(fav, forKey: "ArrayFavoritos")
             
-            //defaults.set(fav, forKey: "ArrayFavoritos")
-            defaults.set(fav, forKey: "Favoritos")
+            
         } else {
             
         }
