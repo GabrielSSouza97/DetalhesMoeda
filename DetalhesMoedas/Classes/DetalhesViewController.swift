@@ -26,6 +26,26 @@ public class DetalhesViewController: UIViewController {
     @IBOutlet weak var labelBotao: UILabel!
     @IBOutlet weak var imagemFavorito: UIImageView!
     
+    @IBOutlet weak var viewUm: UIView!
+    
+    @IBOutlet weak var viewDois: UIView!
+    
+    //Acessibilidade
+    
+    func setupAcessibilidade() {
+        viewUm.isAccessibilityElement = true
+        viewUm.accessibilityLabel = "Nesse espaço contém o valor da moeda selecionada, o botão adicionar ou remover aos favoritos"
+        
+        imagemFavorito.isAccessibilityElement = true
+     //   imagemFavorito.accessib
+        
+        viewDois.isAccessibilityElement = true
+        viewDois.accessibilityLabel = "Nesse espaço contém os volumes negociados, sendo os valores da última hora, do último dia e do último mês"
+        
+    
+        
+    }
+    
     // MARK : @IBAction
     
     @IBAction func removeAdiciona(_ sender: UIButton) {
@@ -58,6 +78,7 @@ public class DetalhesViewController: UIViewController {
             super.viewDidLoad()
             configuraValores()
             self.navigationController?.setNavigationBarHidden(false, animated: false)
+            setupAcessibilidade()
         }
     
     public func configuraValores() {
