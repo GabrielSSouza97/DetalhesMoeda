@@ -12,6 +12,10 @@ public class FavoritosViewController: UIViewController {
     
     //@IBOutlet weak var siglaMoeda: UILabel!
     @IBOutlet weak var collectionViewFavoritos: UICollectionView!
+    
+    
+    @IBOutlet weak var labelData: UILabel!
+    
     let celulaFavorito = "celulaFavorito"
     public var moedaFavorito: Array<Moeda> = []
     var formata:FormataNumero
@@ -32,6 +36,7 @@ public class FavoritosViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        labelData.text = Date().dateString()
         collectionViewFavoritos.reloadData()
         //Perfil.shared
         //print(Perfil.shared.nome)
@@ -82,4 +87,16 @@ extension FavoritosViewController: UICollectionViewDelegate, UICollectionViewDat
             let controller = DetalhesViewController(moedaDetalhe: moedaSelecionada)
             self.navigationController?.pushViewController(controller, animated: true)
         }
+}
+extension Date {
+
+    func dateString() -> String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d MMM yyyy"
+        let result = formatter.string(from: date)
+        return result
+
+    }
+
 }
