@@ -6,16 +6,20 @@ PODS:
   - DetalhesMoedas (1.0.0):
     - AlamofireImage
     - CommonsService
+    - SwiftLint
+  - SwiftLint (0.42.0)
 
 DEPENDENCIES:
   - AlamofireImage (~> 4.1.0)
   - CommonsService (from `https://github.com/leticiassiqueira25/Commons.git`, branch `master`)
   - DetalhesMoedas (from `../`)
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
+    - SwiftLint
 
 EXTERNAL SOURCES:
   CommonsService:
@@ -33,8 +37,9 @@ SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   CommonsService: ea1b6a91b995137b2d52f5361917c44846a0d393
-  DetalhesMoedas: dd80b755136a83bff2d4abf2de7d45b433c2cce5
+  DetalhesMoedas: 8a990c3eb57f62a7b37984ce2bc767173dcc746d
+  SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
 
-PODFILE CHECKSUM: 0803e9e905ecdee45daf4536881f1e920b830624
+PODFILE CHECKSUM: 24c0a044ac952e2b0207498526e34a97cc700023
 
 COCOAPODS: 1.10.1
