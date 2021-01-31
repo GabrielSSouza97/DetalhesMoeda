@@ -10,11 +10,10 @@ import CommonsService
 
 public class FavoritosViewController: UIViewController {
     
-    //@IBOutlet weak var siglaMoeda: UILabel!
-    @IBOutlet weak var collectionViewFavoritos: UICollectionView!
+  
+    @IBOutlet weak var collectionViewFavoritos: UICollectionView?
     
-    
-    @IBOutlet weak var labelData: UILabel!
+    @IBOutlet weak var labelData: UILabel?
     
     let celulaFavorito = "celulaFavorito"
     public var moedaFavorito: Array<Moeda> = []
@@ -36,22 +35,21 @@ public class FavoritosViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        labelData.text = Date().dateString()
-        collectionViewFavoritos.reloadData()
-        //Perfil.shared
-        //print(Perfil.shared.nome)
+        labelData?.text = Date().dateString()
+        collectionViewFavoritos?.reloadData()
+
     }
     
     public override func viewWillAppear(_ animated: Bool) {
-            collectionViewFavoritos.reloadData()
+            collectionViewFavoritos?.reloadData()
         }
     
     func setupCollectionView() {
-        collectionViewFavoritos.dataSource = self
-        collectionViewFavoritos.delegate = self
+        collectionViewFavoritos?.dataSource = self
+        collectionViewFavoritos?.delegate = self
         
         let nibCell = UINib(nibName: "FavoritosCollectionViewCell", bundle: Bundle(for: FavoritosViewController.self))
-        collectionViewFavoritos.register(nibCell, forCellWithReuseIdentifier: celulaFavorito)
+        collectionViewFavoritos?.register(nibCell, forCellWithReuseIdentifier: celulaFavorito)
     }
     
 }
@@ -98,6 +96,5 @@ extension Date {
         return result
 
     }
-
 }
 // tela ok

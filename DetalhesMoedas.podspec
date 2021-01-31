@@ -34,6 +34,7 @@ TODO: Add long description of the pod here.
   
   s.dependency 'CommonsService'
   s.dependency 'AlamofireImage'
+  s.dependency 'SwiftLint'
 
   
   
